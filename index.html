@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planterra</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+      body {
+        font-family: Urbanist, sans-serif;
+        background-color: #293f14;
+      }
+
+      .main-container {
+        background-color: white;
+        border-radius: 10px;
+        width: 80%;
+        margin: 0 auto;
+        min-width: 30%;
+      }
+
+      .top-container {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .brandname {
+        padding: 20px;
+        margin: 20px;
+        color: #293f14;
+        font-size: 42px;
+      }
+
+      .brandname,
+      .navbar {
+        width: 50%;
+      }
+
+      .navbar {
+        display: flex;
+        color: #736b92;
+        font-size: 20px;
+        font-weight: bolder;
+        justify-content: space-evenly;
+        margin-top: 50px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .navbar a:hover {
+        background-color: #839073;
+        color: white;
+      }
+
+      .slideshow-container {
+        position: relative;
+        max-width: 100%;
+        overflow: hidden;
+        background-color: #839073;
+        margin: 20px 80px;
+        border-radius: 10px;
+        min-width: 30%;
+      }
+
+      .slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+      }
+
+      .text-left {
+        flex-direction: row-reverse;
+      }
+
+      .text-right {
+        flex-direction: row;
+      }
+
+      .image {
+        flex: 0 1 auto;
+        max-width: 100%;
+        padding: 10px;
+      }
+
+      .image img {
+        border-radius: 10px;
+        object-fit: contain;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .text {
+        flex: 0 1 auto;
+        max-width: 100%;
+        padding: 20px;
+        text-align: center;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-style: italic;
+      }
+
+      @media (max-width: 768px) {
+        .slide {
+          flex-direction: row;
+        }
+        .image,
+        .text {
+          flex: 1 1 50%;
+          max-width: 50%;
+        }
+      }
+
+      @media (max-width: 787px) {
+        .image img {
+          max-width: 100%;
+          max-height: 300px;
+          object-fit: contain;
+        }
+      }
+
+      .text p {
+        color: #333;
+        font-size: 16px;
+      }
+
+      .nav-button {
+        display: flex;
+        justify-content: center;
+        color: #f3a738;
+        font-size: 30px;
+        background-color: #839073;
+      }
+
+      /*.prev {
+      }*/
+
+      /* .next {
+      }
+      */
+
+      .slide-indicator {
+        text-align: center;
+        background-color: #839073;
+        color: #f3a738;
+        margin-top: 10px;
+      }
+
+      .dot {
+        height: 10px;
+        width: 10px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0 5px;
+      }
+
+      .active {
+        background-color: #333;
+      }
+
+      .bottom-menu {
+        display: flex;
+        font-size: 26px;
+        color: white;
+      }
+
+      .bottom-menu div {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        height: 75px;
+      }
+      .our-story {
+        background-color: #736b92;
+      }
+
+      .our-story:hover {
+        background-color: #bfb3f3da;
+        color: black;
+      }
+
+      .download {
+        background-color: #839073;
+      }
+
+      .download:hover {
+        background-color: #abc48ed2;
+        color: black;
+      }
+
+      .donate {
+        background-color: #f3a738;
+      }
+
+      .donate:hover {
+        background-color: #ffd28ec9;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-right">search icon hamburger menu icon</div>
+    <div class="main-container">
+      <div class="top-container">
+        <h1 class="brandname">Planterra</h1>
+        <div class="navbar">
+          <a href="">Our Story</a>
+          <a href="">Shop</a>
+          <a href="">Contact Us</a>
+        </div>
+      </div>
+      <div class="slideshow-container">
+        <div class="slide text-left">
+          <img
+            class="image"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/309/original/garden.jpg?1713200576"
+            alt="slide1"
+          />
+          <div class="text">
+            <p>
+              Ever since I downloaded Planterra, my garden has never looked
+              better. The tips are practical and so easy to follow!
+            </p>
+          </div>
+        </div>
+        <div class="slide text-right">
+          <img
+            class="image"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/304/original/a6a60763400bafdc971774e5b1729e13.jpg?1713200445"
+            alt="slide2"
+          />
+          <div class="text">
+            <p>
+              The watering reminders and care tips from Planterra are spot-on.
+              My plants are thriving thanks to this app!
+            </p>
+          </div>
+        </div>
+        <div class="slide text-left">
+          <img
+            class="image"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/632/original/vertical-garden-ideas-wooden-wall-mount-1659017623.png?1713457732"
+            alt="slide3"
+          />
+          <div class="text">
+            <p>
+              I'm new to gardening, and this app has been my guide. It's like
+              having a gardener in your pocket!
+            </p>
+          </div>
+        </div>
+        <div class="slide-indicator"></div>
+        <div class="nav-button">
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(+1)">&#10095;</a>
+        </div>
+        <div class="slide-indicator"></div>
+      </div>
+      <div class="bottom-menu">
+        <div class="our-story">Our Story</div>
+        <div class="download">Download</div>
+        <div class="donate">Donate</div>
+      </div>
+    </div>
+  </body>
+  <script>
+    let slideIndex = 1;
+    let slideTimeout;
+
+    showSlides(slideIndex);
+
+    function showSlides(n) {
+      let slides = document.getElementsByClassName("slide");
+      let dotsContainer = document.querySelector(".slide-indicator");
+
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("text-left", "text-right");
+      }
+
+      if (slideIndex % 2 === 0) {
+        slides[slideIndex - 1].classList.add("text-right");
+      } else {
+        slides[slideIndex - 1].classList.add("text-left");
+      }
+
+      slides[slideIndex - 1].style.display = "flex";
+
+      updateDots(dotsContainer, slideIndex - 1);
+
+      clearTimeout(slideTimeout);
+      slideTimeout = setTimeout(function () {
+        showSlides((slideIndex += 1));
+      }, 10000);
+    }
+
+    function plusSlides(n) {
+      showSlides((slideIndex += n));
+    }
+
+    function updateDots(dotsContainer, activeIndex) {
+      let dots = dotsContainer.querySelectorAll(".dot");
+      for (let dot of dots) {
+        dots.className = dot.className.replace(" active", "");
+      }
+
+      if (dots.length > 0) {
+        dots[activeIndex].className += " active";
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      let slides = document.getElementsByClassName("slide");
+      let dotsContainer = document.querySelector(".slide-indicator");
+      for (let i = 0; i < slides.length; i++) {
+        let dot = document.createElement("span");
+        dot.className = "dot";
+
+        (function (index) {
+          dot.addEventListener("click", function () {
+            plusSlides(index + 1);
+          });
+        })(i);
+        dotsContainer.appendChild(dot);
+      }
+      showSlides(slideIndex);
+    });
+  </script>
+</html>
