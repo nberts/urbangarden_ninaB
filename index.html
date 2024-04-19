@@ -3,33 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/8f24e6bae0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    
     <title>Planterra</title>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
       body {
-        font-family: Urbanist, sans-serif;
-        background-color: #293f14;
+        background-color: #053225;
+      }
+
+      .top-right {
+        color: #60a561;
+        font-size: 32px;
+        display: flex;
+        justify-content: right;
+        padding: 30px 60px 0 0;
+      }
+
+      .top-right i {
+        padding: 20px;
+      }
+
+      .top-right i:hover {
+        color: #e34a6f;
       }
 
       .main-container {
-        background-color: white;
-        border-radius: 10px;
-        width: 80%;
-        margin: 0 auto;
+        background-color: #d7ffab;
+        border-radius: 40px;
+        width: 70%;
+        margin: auto;
         min-width: 30%;
       }
 
       .top-container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+      }
+
+      h1 {
+        padding: 4px;
+        margin: 10px;
+        color: #e34a6f;
       }
 
       .brandname {
-        padding: 20px;
-        margin: 20px;
-        color: #293f14;
-        font-size: 42px;
+        font-size: 72px;
+        text-shadow: 2px 2px #f7b2bd;
+      }
+
+      .highlight {
+        padding: 300px 30px;
       }
 
       .brandname,
@@ -39,28 +66,33 @@
 
       .navbar {
         display: flex;
-        color: #736b92;
-        font-size: 20px;
-        font-weight: bolder;
         justify-content: space-evenly;
-        margin-top: 50px;
+        align-items: center;
+        height: 140px;
+        color: #053225;
+        font-size: 25px;
+        padding-right: 40px;
       }
 
       a {
         text-decoration: none;
+        color: #053225;
+        font-size: 30px;
       }
 
       .navbar a:hover {
-        background-color: #839073;
-        color: white;
+        color: #b2a198;
+        font-weight: lighter;
+        padding: 0 16px;
       }
 
       .slideshow-container {
         position: relative;
         max-width: 100%;
         overflow: hidden;
-        background-color: #839073;
-        margin: 20px 80px;
+        background-color: #d7ffab;
+        margin: auto;
+        padding: 0;
         border-radius: 10px;
         min-width: 30%;
       }
@@ -70,7 +102,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        padding: 20px;
+        padding: 5px;
       }
 
       .text-left {
@@ -84,24 +116,34 @@
       .image {
         flex: 0 1 auto;
         max-width: 100%;
-        padding: 10px;
+        margin: 20px;
+        padding: 20px;
+        background-color: #e34a6f;
+        border-radius: 500px;
       }
 
-      .image img {
-        border-radius: 10px;
+      img {
+        height: 500px;
+        width: 350px;
         object-fit: contain;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
 
       .text {
         flex: 0 1 auto;
+        color: #e34a6f;
         max-width: 100%;
-        padding: 20px;
+        padding: 50px;
         text-align: center;
-        background-color: #ffffff;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /*background-color: #f7b2bd;*/
+        border-radius: 100px;
+        /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
         font-style: italic;
+        font-weight: bold;
+      }
+
+      em {
+        font-weight: lighter;
+        font-size: 22px;
       }
 
       @media (max-width: 768px) {
@@ -124,49 +166,56 @@
       }
 
       .text p {
-        color: #333;
-        font-size: 16px;
+        color: #053225;
+        font-size: 30px;
       }
 
       .nav-button {
-        display: flex;
-        justify-content: center;
-        color: #f3a738;
-        font-size: 30px;
-        background-color: #839073;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        transform: translateY(-50%);
       }
 
-      /*.prev {
-      }*/
-
-      /* .next {
+      .nav-button a {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
       }
-      */
 
+      
+      .prev {
+        left: 10px;
+      }
+
+      .next {
+        right: 10px;
+      }
+      
       .slide-indicator {
         text-align: center;
-        background-color: #839073;
-        color: #f3a738;
+        color: #e34a6f;
         margin-top: 10px;
       }
 
       .dot {
         height: 10px;
         width: 10px;
-        background-color: #bbb;
+        background-color: #f7b2bd;
         border-radius: 50%;
         display: inline-block;
         margin: 0 5px;
       }
 
       .active {
-        background-color: #333;
+        background-color: #e34a6f;
       }
 
       .bottom-menu {
         display: flex;
-        font-size: 26px;
-        color: white;
+        font-size: 32px;
+        color: #053225;
+        font-weight: bold;
       }
 
       .bottom-menu div {
@@ -175,41 +224,56 @@
         justify-content: center;
         width: 100%;
         align-items: center;
-        height: 75px;
+        height: 85px;
+        padding: 30px 0;
       }
       .our-story {
-        background-color: #736b92;
+        background-color: #e34a6f;
+        border-radius: 0 0 0 40px;
       }
 
       .our-story:hover {
-        background-color: #bfb3f3da;
-        color: black;
+        background-color: #5a423e;
+        color: white;
       }
 
       .download {
-        background-color: #839073;
+        background-color: #60a561;
       }
 
       .download:hover {
-        background-color: #abc48ed2;
-        color: black;
+        background-color: #265039;
+        color: white;
       }
 
       .donate {
-        background-color: #f3a738;
+        background-color: #f7b2bd;
+        border-radius: 0 0 40px 0;
       }
 
       .donate:hover {
-        background-color: #ffd28ec9;
-        color: black;
+        background-color: #923f32;
+        color: white;
+      }
+
+      .socials {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: #60a561;
+        margin: 20px auto;
+        font-size: 30px;
       }
     </style>
   </head>
   <body>
-    <div class="top-right">search icon hamburger menu icon</div>
+    <div class="top-right">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-solid fa-bars"></i>
+    </div>
     <div class="main-container">
       <div class="top-container">
-        <h1 class="brandname">Planterra</h1>
+        <h1 class="brandname"><span class="highlight">Planterra</span></h1>
         <div class="navbar">
           <a href="">Our Story</a>
           <a href="">Shop</a>
@@ -218,48 +282,60 @@
       </div>
       <div class="slideshow-container">
         <div class="slide text-left">
-          <img
-            class="image"
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/309/original/garden.jpg?1713200576"
-            alt="slide1"
-          />
+          <div class="image">
+            <img
+              class="photo"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/721/original/aloe-plant-800-removebg-preview.png?1713543312"
+              alt="slide1"
+            />
+          </div>
           <div class="text">
             <p>
-              Ever since I downloaded Planterra, my garden has never looked
-              better. The tips are practical and so easy to follow!
+              "Ever since I downloaded Planterra, my garden has never looked
+              better. The tips are practical and so easy to follow!"
+            </br>
+            <em>- Joe A., London, UK </em>
             </p>
           </div>
         </div>
         <div class="slide text-right">
-          <img
-            class="image"
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/304/original/a6a60763400bafdc971774e5b1729e13.jpg?1713200445"
-            alt="slide2"
-          />
+          <div class="image">
+            <img
+              class="picture"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/716/original/1000_F_446439828_H1Et5birTiUxn37RQDJDH8mI7eYOdWrM-removebg-preview.png?1713543180"
+              alt="slide2"
+            />
+          </div>
           <div class="text">
             <p>
-              The watering reminders and care tips from Planterra are spot-on.
-              My plants are thriving thanks to this app!
+              "The watering reminders and care tips from Planterra are spot-on.
+              My plants are thriving thanks to this app!"
+              </br>
+              <em>- John C., Los Angeles, USA </em>
             </p>
           </div>
         </div>
         <div class="slide text-left">
-          <img
-            class="image"
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/632/original/vertical-garden-ideas-wooden-wall-mount-1659017623.png?1713457732"
-            alt="slide3"
-          />
+          <div class="image">
+            <img
+              class="picture"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/714/original/61ZTL8r70eL._AC_UF1000_1000_QL80_-removebg-preview%281%29.png?1713543164"
+              alt="slide3"
+            />
+          </div>
           <div class="text">
             <p>
-              I'm new to gardening, and this app has been my guide. It's like
-              having a gardener in your pocket!
+              "I'm new to gardening, and this app has been my guide. It's like
+              having a gardener in your pocket!"
+              </br>
+            <em>- Jake G., New York City, USA </em>
             </p>
           </div>
         </div>
-        <div class="slide-indicator"></div>
+
         <div class="nav-button">
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(+1)">&#10095;</a>
+          <a class="next" onclick="plusSlides(+1)">&#10095;</a>  
         </div>
         <div class="slide-indicator"></div>
       </div>
@@ -267,8 +343,15 @@
         <div class="our-story">Our Story</div>
         <div class="download">Download</div>
         <div class="donate">Donate</div>
-      </div>
+      </div>    
     </div>
+      <div class="socials">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-tiktok"></i>
+      </div>
+
   </body>
   <script>
     let slideIndex = 1;
