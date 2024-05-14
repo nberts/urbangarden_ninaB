@@ -8,264 +8,267 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     
     <title>Planterra</title>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+ <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-      body {
-        background-color: #053225;
-      }
+        body {
+            background-color: #053225;
+        }
 
-      .top-right {
-        color: #60a561;
-        font-size: 32px;
-        display: flex;
-        justify-content: right;
-        padding: 30px 60px 0 0;
-      }
+        .top-right {
+            color: #60a561;
+            font-size: 32px;
+            display: flex;
+            justify-content: right;
+            padding: 30px 60px 0 0;
+        }
 
-      .top-right i {
-        padding: 20px;
-      }
+        .top-right i {
+            padding: 20px;
+        }
 
-      .top-right i:hover {
-        color: #e34a6f;
-      }
+        .top-right i:hover {
+            color: #e34a6f;
+        }
 
-      .main-container {
-        background-color: #d7ffab;
-        border-radius: 40px;
-        width: 75%;
-        margin: auto;
-        min-width: 30%;
-        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.774);
-      }
+        .main-container {
+            background-color: #d7ffab;
+            border-radius: 40px;
+            width: 75%;
+            margin: auto;
+            min-width: 30%;
+            box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.774);
+        }
 
-      .top-container {
-        display: flex;
-        justify-content: space-evenly;
-      }
+        .top-container {
+            display: flex;
+            justify-content: space-evenly;
+        }
 
-      h1 {
-        padding: 4px;
-        margin: 10px;
-        color: #e34a6f;
-      }
+        h1 {
+            padding: 4px;
+            margin: 10px;
+            color: #e34a6f;
+        }
 
-      .brandname {
-        font-size: 72px;
-        text-shadow: 2px 2px #f7b2bd;
-      }
+        .brandname {
+            font-size: 72px;
+            text-shadow: 2px 2px #f7b2bd;
+        }
 
-      .highlight {
-        padding: 300px 30px;
-      }
+        .highlight {
+            padding: 300px 30px;
+        }
 
-      .brandname,
-      .navbar {
-        width: 50%;
-      }
+        .brandname,
+        .navbar {
+            width: 50%;
+        }
 
-      .navbar {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 140px;
-        color: #053225;
-        font-size: 25px;
-        padding-right: 40px;
-      }
+        .navbar {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 140px;
+            color: #053225;
+            font-size: 25px;
+            padding-right: 40px;
+        }
 
-      a {
-        text-decoration: none;
-        color: #053225;
-        font-size: 30px;
-      }
+        a {
+            text-decoration: none;
+            color: #053225;
+            font-size: 30px;
+        }
 
-      .navbar a:hover {
-        color: #b2a198;
-        font-weight: lighter;
-        padding: 0 16px;
-      }
+        .navbar a:hover {
+            color: #b2a198;
+            font-weight: lighter;
+            padding: 0 16px;
+        }
 
-      .slideshow-container {
-        position: relative;
-        max-width: 100%;
-        overflow: hidden;
-        background-color: #d7ffab;
-        margin: auto;
-        padding: 0;
-        border-radius: 10px;
-        min-width: 30%;
-      }
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            overflow: hidden;
+            background-color: #d7ffab;
+            margin: auto;
+            padding: 0;
+            border-radius: 10px;
+            min-width: 30%;
+        }
 
-      .slide {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        padding: 5px;
-      }
-
-      .text-left {
-        flex-direction: row-reverse;
-      }
-
-      .text-right {
-        flex-direction: row;
-      }
-
-      .image {
-        flex: 0 1 auto;
-        max-width: 100%;
-        margin: 20px;
-        padding: 5px;
-        background-color: #e34a6f;
-        border-radius: 500px;
-        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.726);
-      }
-
-      img {
-        height: 500px;
-        width: 300px;
-        object-fit: contain;
-      }
-
-      .text {
-        flex: 0 1 auto;
-        color: #e34a6f;
-        max-width: 100%;
-        padding: 55px;
-        text-align: center;
-        border-radius: 100px;
-        font-style: italic;
-        font-weight: bold;
-      }
-
-      em {
-        font-weight: lighter;
-        font-size: 22px;
-      }
-
-      @media (max-width: 768px) {
         .slide {
-          flex-direction: row;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 5px;
+          width: 80%;
+          height: 100%;
+          text-align: center;
         }
-        .image,
-        .text {
-          flex: 1 1 50%;
-          max-width: 50%;
-        }
-      }
 
-      @media (max-width: 787px) {
-        .image img {
+        .text-left {
+            flex-direction: row-reverse;
+        }
+
+        .text-right {
+            flex-direction: row;
+        }
+
+        .image {
+          flex: 0 1 auto;
           max-width: 100%;
-          max-height: 300px;
-          object-fit: contain;
+          margin: 5px 0; /* Reduced margin */
+          padding: 5px;
+          background-color: #e34a6f;
+          border-radius: 500px;
+          box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.726);
         }
-      }
 
-      .text p {
-        color: #053225;
-        font-size: 30px;
-      }
+        img {
+            height: 500px;
+            width: 300px;
+            object-fit: contain;
+        }
 
-      .nav-button {
-        position: absolute;
-        top: 50%;
-        width: 100%;
-        transform: translateY(-50%);
-      }
+        .text {
+          flex: 0 1 auto;
+          color: #e34a6f;
+          max-width: 100%;
+          padding: 10px; /* Reduced padding */
+          text-align: center;
+          border-radius: 100px;
+          font-style: italic;
+          font-weight: bold;
+        }
 
-      .nav-button a {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        margin: 10px;
-      }
+        em {
+            font-weight: lighter;
+            font-size: 22px;
+        }
 
-      .prev {
-        left: 5px;
-        font-size: 50px;
-      }
+        @media (max-width: 768px) {
+            .slide {
+                flex-direction: column;
+            }
+            .image,
+            .text {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
 
-      .next {
-        right: 5px;
-        font-size: 50px;
-      }
-      
-      .slide-indicator {
-        text-align: center;
-        color: #e34a6f;
-        margin-top: 10px;
-      }
+        @media (max-width: 787px) {
+            .image img {
+                max-width: 100%;
+                max-height: 300px;
+                object-fit: contain;
+            }
+        }
 
-      .dot {
-        height: 10px;
-        width: 10px;
-        background-color: #f7b2bd;
-        border-radius: 50%;
-        display: inline-block;
-        margin: 0 5px;
-      }
+        .text p {
+            color: #053225;
+            font-size: 30px;
+        }
 
-      .active {
-        background-color: #e34a6f;
-      }
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            transform: translateY(-50%);
+        }
 
-      .bottom-menu {
-        display: flex;
-        font-size: 32px;
-        color: #053225;
-        font-weight: bold;
-      }
+        .nav-button a {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 10px;
+        }
 
-      .bottom-menu div {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        align-items: center;
-        height: 85px;
-        padding: 30px 0;
-      }
-      .our-story {
-        background-color: #e34a6f;
-        border-radius: 0 0 0 40px;
-      }
+        .prev {
+            left: 5px;
+            font-size: 50px;
+        }
 
-      .our-story:hover {
-        background-color: #97314b;
-        color: white;
-      }
+        .next {
+            right: 5px;
+            font-size: 50px;
+        }
+        
+        .slide-indicator {
+            text-align: center;
+            color: #e34a6f;
+            margin-top: 10px;
+        }
 
-      .download {
-        background-color: #60a561;
-      }
+        .dot {
+            height: 10px;
+            width: 10px;
+            background-color: #f7b2bd;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 5px;
+        }
 
-      .download:hover {
-        background-color: #2f5230;
-        color: white;
-      }
+        .active {
+            background-color: #e34a6f;
+        }
 
-      .donate {
-        background-color: #f7b2bd;
-        border-radius: 0 0 40px 0;
-      }
+        .bottom-menu {
+            display: flex;
+            font-size: 32px;
+            color: #053225;
+            font-weight: bold;
+        }
 
-      .donate:hover {
-        background-color: #9c7279;
-        color: white;
-      }
+        .bottom-menu div {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+            height: 85px;
+            padding: 30px 0;
+        }
+        .our-story {
+            background-color: #e34a6f;
+            border-radius: 0 0 0 40px;
+        }
 
-      .socials {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        color: #60a561;
-        margin: 20px auto;
-        font-size: 30px;
-      }
+        .our-story:hover {
+            background-color: #97314b;
+            color: white;
+        }
+
+        .download {
+            background-color: #60a561;
+        }
+
+        .download:hover {
+            background-color: #2f5230;
+            color: white;
+        }
+
+        .donate {
+            background-color: #f7b2bd;
+            border-radius: 0 0 40px 0;
+        }
+
+        .donate:hover {
+            background-color: #9c7279;
+            color: white;
+        }
+
+        .socials {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            color: #60a561;
+            margin: 20px auto;
+            font-size: 30px;
+        }
     </style>
   </head>
   <body>
@@ -313,7 +316,7 @@
               "The watering reminders and care tips from Planterra are spot-on.
               My plants are thriving thanks to this app!"
               </br>
-              <em>- John C., Los Angeles, USA </em>
+              <em>- John M., Los Angeles, USA </em>
             </p>
           </div>
         </div>
