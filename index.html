@@ -3,272 +3,281 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/8f24e6bae0.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-    
+    <script
+      src="https://kit.fontawesome.com/8f24e6bae0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
     <title>Planterra</title>
- <style>
-        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
-        body {
-            background-color: #053225;
-        }
+      body {
+        background-color: #053225;
+      }
 
-        .top-right {
-            color: #60a561;
-            font-size: 32px;
-            display: flex;
-            justify-content: right;
-            padding: 30px 60px 0 0;
-        }
+      .top-right {
+        color: #60a561;
+        font-size: 32px;
+        display: flex;
+        justify-content: right;
+        padding: 30px 60px 0 0;
+      }
 
-        .top-right i {
-            padding: 20px;
-        }
+      .top-right i {
+        padding: 20px;
+      }
 
-        .top-right i:hover {
-            color: #e34a6f;
-        }
+      .top-right i:hover {
+        color: #e34a6f;
+      }
 
-        .main-container {
-            background-color: #d7ffab;
-            border-radius: 40px;
-            width: 75%;
-            margin: auto;
-            min-width: 30%;
-            box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.774);
-        }
+      .main-container {
+        background-color: #d7ffab;
+        border-radius: 40px;
+        width: 75%;
+        margin: auto;
+        min-width: 30%;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.774);
+      }
 
-        .top-container {
-            display: flex;
-            justify-content: space-evenly;
-        }
+      .top-container {
+        display: flex;
+        justify-content: space-evenly;
+      }
 
-        h1 {
-            padding: 4px;
-            margin: 10px;
-            color: #e34a6f;
-        }
+      h1 {
+        padding: 4px;
+        margin: 10px;
+        color: #e34a6f;
+      }
 
-        .brandname {
-            font-size: 72px;
-            text-shadow: 2px 2px #f7b2bd;
-        }
+      .brandname {
+        font-size: 72px;
+        text-shadow: 2px 2px #f7b2bd;
+      }
 
-        .highlight {
-            padding: 300px 30px;
-        }
+      .highlight {
+        padding: 300px 30px;
+      }
 
-        .brandname,
-        .navbar {
-            width: 50%;
-        }
+      .brandname,
+      .navbar {
+        width: 50%;
+      }
 
-        .navbar {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            height: 140px;
-            color: #053225;
-            font-size: 25px;
-            padding-right: 40px;
-        }
+      .navbar {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 140px;
+        color: #053225;
+        font-size: 25px;
+        padding-right: 40px;
+      }
 
-        a {
-            text-decoration: none;
-            color: #053225;
-            font-size: 30px;
-        }
+      a {
+        text-decoration: none;
+        color: #053225;
+        font-size: 30px;
+      }
 
-        .navbar a:hover {
-            color: #b2a198;
-            font-weight: lighter;
-            padding: 0 16px;
-        }
+      .navbar a:hover {
+        color: #b2a198;
+        font-weight: lighter;
+        padding: 0 16px;
+      }
 
-        .slideshow-container {
-            position: relative;
-            max-width: 100%;
-            overflow: hidden;
-            background-color: #d7ffab;
-            margin: auto;
-            padding: 0;
-            border-radius: 10px;
-            min-width: 30%;
-        }
+      .slideshow-container {
+        position: relative;
+        max-width: 100%;
+        overflow: hidden;
+        background-color: #d7ffab;
+        margin: auto;
+        padding: 0;
+        border-radius: 10px;
+        min-width: 30%;
+      }
 
+      .slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+      }
+
+      .text-left {
+        flex-direction: row-reverse;
+      }
+
+      .text-right {
+        flex-direction: row;
+      }
+
+      .image {
+        flex: 0 1 auto;
+        max-width: 40%;
+        margin: 5px;
+        padding: 5px;
+        background-color: #e34a6f;
+        border-radius: 500px;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.726);
+      }
+
+      img {
+        height: 400px;
+        width: 250px;
+        object-fit: contain;
+      }
+
+      .text {
+        flex: 0 1 auto;
+        color: #e34a6f;
+        max-width: 60%;
+        padding: 10px;
+        text-align: center;
+        border-radius: 100px;
+        font-style: italic;
+        font-weight: bold;
+      }
+
+      em {
+        font-weight: lighter;
+        font-size: 22px;
+      }
+
+      @media (max-width: 768px) {
         .slide {
-          display: flex;
           flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          padding: 5px;
-          width: 80%;
-          height: 100%;
-          text-align: center;
         }
-
-        .text-left {
-            flex-direction: row-reverse;
-        }
-
-        .text-right {
-            flex-direction: row;
-        }
-
-        .image {
-          flex: 0 1 auto;
-          max-width: 100%;
-          margin: 5px 0; /* Reduced margin */
-          padding: 5px;
-          background-color: #e34a6f;
-          border-radius: 500px;
-          box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.726);
-        }
-
-        img {
-            height: 500px;
-            width: 300px;
-            object-fit: contain;
-        }
-
+        .image,
         .text {
-          flex: 0 1 auto;
-          color: #e34a6f;
+          flex: 1 1 100%;
           max-width: 100%;
-          padding: 10px; /* Reduced padding */
-          text-align: center;
-          border-radius: 100px;
-          font-style: italic;
-          font-weight: bold;
         }
+      }
 
-        em {
-            font-weight: lighter;
-            font-size: 22px;
+      @media (max-width: 787px) {
+        .image img {
+          max-width: 100%;
+          max-height: 300px;
+          object-fit: contain;
         }
+      }
 
-        @media (max-width: 768px) {
-            .slide {
-                flex-direction: column;
-            }
-            .image,
-            .text {
-                flex: 1 1 100%;
-                max-width: 100%;
-            }
-        }
+      .text p {
+        color: #053225;
+        font-size: 30px;
+      }
 
-        @media (max-width: 787px) {
-            .image img {
-                max-width: 100%;
-                max-height: 300px;
-                object-fit: contain;
-            }
-        }
+      .nav-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: auto;
+      }
 
-        .text p {
-            color: #053225;
-            font-size: 30px;
-        }
+      .nav-button a:hover {
+        color: #e34a6f;
+      }
 
-        .nav-button {
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            transform: translateY(-50%);
-        }
+      .prev {
+        left: 10px;
+        font-size: 60px;
+        z-index: 10;
+      }
 
-        .nav-button a {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            margin: 10px;
-        }
+      .next {
+        right: 10px;
+        font-size: 60px;
+        z-index: 10;
+      }
 
-        .prev {
-            left: 5px;
-            font-size: 50px;
-        }
+      .slide-indicator {
+        text-align: center;
+        color: #e34a6f;
+        margin-top: 10px;
+      }
 
-        .next {
-            right: 5px;
-            font-size: 50px;
-        }
-        
-        .slide-indicator {
-            text-align: center;
-            color: #e34a6f;
-            margin-top: 10px;
-        }
+      .dot {
+        height: 10px;
+        width: 10px;
+        background-color: #f7b2bd;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0 5px;
+      }
 
-        .dot {
-            height: 10px;
-            width: 10px;
-            background-color: #f7b2bd;
-            border-radius: 50%;
-            display: inline-block;
-            margin: 0 5px;
-        }
+      .active {
+        background-color: #e34a6f;
+      }
 
-        .active {
-            background-color: #e34a6f;
-        }
+      .bottom-menu {
+        display: flex;
+        font-size: 32px;
+        color: #053225;
+        font-weight: bold;
+      }
 
-        .bottom-menu {
-            display: flex;
-            font-size: 32px;
-            color: #053225;
-            font-weight: bold;
-        }
+      .bottom-menu div {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        height: 85px;
+        padding: 30px 0;
+      }
+      .our-story {
+        background-color: #e34a6f;
+        border-radius: 0 0 0 40px;
+      }
 
-        .bottom-menu div {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            align-items: center;
-            height: 85px;
-            padding: 30px 0;
-        }
-        .our-story {
-            background-color: #e34a6f;
-            border-radius: 0 0 0 40px;
-        }
+      .our-story:hover {
+        background-color: #e34abc;
+        color: white;
+      }
 
-        .our-story:hover {
-            background-color: #97314b;
-            color: white;
-        }
+      .download {
+        background-color: #60a561;
+      }
 
-        .download {
-            background-color: #60a561;
-        }
+      .download:hover {
+        background-color: #82a560;
+        color: white;
+      }
 
-        .download:hover {
-            background-color: #2f5230;
-            color: white;
-        }
+      .donate {
+        background-color: #f7b2bd;
+        border-radius: 0 0 40px 0;
+      }
 
-        .donate {
-            background-color: #f7b2bd;
-            border-radius: 0 0 40px 0;
-        }
+      .donate:hover {
+        background-color: #f7b2e0;
+        color: white;
+      }
 
-        .donate:hover {
-            background-color: #9c7279;
-            color: white;
-        }
+      .socials {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: #60a561;
+        margin: 20px auto;
+        font-size: 40px;
+      }
 
-        .socials {
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            color: #60a561;
-            margin: 20px auto;
-            font-size: 30px;
-        }
+      .socials i:hover {
+        color: #e34a6f;
+      }
     </style>
   </head>
   <body>
@@ -298,8 +307,8 @@
             <p>
               "Ever since I downloaded Planterra, my garden has never looked
               better. The tips are practical and so easy to follow!"
-            </br>
-            <em>- Joe A., London, UK </em>
+              <br />
+              <em>- Joe A., London, UK</em>
             </p>
           </div>
         </div>
@@ -315,8 +324,8 @@
             <p>
               "The watering reminders and care tips from Planterra are spot-on.
               My plants are thriving thanks to this app!"
-              </br>
-              <em>- John M., Los Angeles, USA </em>
+              <br />
+              <em>- John M., Los Angeles, USA</em>
             </p>
           </div>
         </div>
@@ -332,15 +341,35 @@
             <p>
               "I'm new to gardening, and this app has been my guide. It's like
               having a gardener in your pocket!"
-              </br>
-            <em>- Jake G., New York City, USA </em>
+              <br />
+              <em>- Jake G., New York City, USA</em>
+            </p>
+          </div>
+        </div>
+        <div class="slide text-right">
+          <div class="image">
+            <img
+              class="pictu//sre"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/469/original/Spider_Plant-_Chlorophytum_Comosum_-9-removebg-preview.png?1715706774"
+              alt="slide2"
+            />
+          </div>
+          <div class="text">
+            <p>
+              "I love how easy it is to use this app. The intuitive interface
+              and detailed plant care guides have made indoor gardening a
+              breeze."
+              <br />
+              <em>- Matty H., Oxford, UK</em>
             </p>
           </div>
         </div>
 
-        <div class="nav-button">
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(+1)">&#10095;</a>  
+        <div class="nav-button prev">
+          <a onclick="plusSlides(-1)">&#10094;</a>
+        </div>
+        <div class="nav-button next">
+          <a onclick="plusSlides(1)">&#10095;</a>
         </div>
         <div class="slide-indicator"></div>
       </div>
@@ -348,15 +377,14 @@
         <div class="our-story">Our Story</div>
         <div class="download">Download</div>
         <div class="donate">Donate</div>
-      </div>    
-    </div>
-      <div class="socials">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-tiktok"></i>
       </div>
-
+    </div>
+    <div class="socials">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-tiktok"></i>
+    </div>
   </body>
   <script>
     let slideIndex = 1;
@@ -406,7 +434,7 @@
     function updateDots(dotsContainer, activeIndex) {
       let dots = dotsContainer.querySelectorAll(".dot");
       for (let dot of dots) {
-        dots.className = dot.className.replace(" active", "");
+        dot.className = dot.className.replace(" active", "");
       }
 
       if (dots.length > 0) {
